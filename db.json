@@ -1,0 +1,40 @@
+{
+  "users": [
+    {
+      "name": "bknh",
+      "email": "arpitvamran@gmail.com",
+      "phone": "35345342343",
+      "id": 2
+    },
+    {
+      "name": "arpit",
+      "email": "arpitvamran@gmail.com",
+      "phone": "345345325423",
+      "id": 3
+    },
+    {
+      "name": "arpit singh",
+      "email": "arpitvamran@gmail.com",
+      "phone": "23423432",
+      "id": 4
+    },
+    {
+      "name": "arpit",
+      "email": "arpitvarman64@gmail.com",
+      "phone": "7455878361",
+      "id": 10
+    },
+    {
+      "name": "arpit",
+      "email": "arpitvarman64@gmail.com",
+      "phone": "7455878361",
+      "id": 12
+    },
+    {
+      "name": "arpit",
+      "email": "arpitvarman64@gmail.com",
+      "phone": "7455878361",
+      "id": 13
+    }
+  ]
+}
