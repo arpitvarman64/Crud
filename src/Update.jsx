@@ -13,7 +13,7 @@ function Update() {
 const navigate=useNavigate();
   useEffect(() => {
     axios
-    .get(`http://localhost:3001/users/${id}`)
+    .get(`https://65d26ec3987977636bfc55ae.mockapi.io/users/${id}`)
       .then((res) => {setValues(res.data)})
       .catch((err) => console.log(err));
   },[id]);
@@ -21,7 +21,7 @@ const navigate=useNavigate();
   const handleUpdate=(event)=>{
     event.preventDefault();
     axios
-    .put(" http://localhost:3001/users/"+id,values)
+    .put(" https://65d26ec3987977636bfc55ae.mockapi.io/users/"+id,values)
     .then((res) => {
      console.log(res);
      navigate('/');

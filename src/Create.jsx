@@ -13,7 +13,7 @@ function Create() {
   const handleSubmit=(event)=>{
      event.preventDefault();
      axios
-     .post(" http://localhost:3001/users",values)
+     .post(" https://65d26ec3987977636bfc55ae.mockapi.io/users",values)
      .then((res) => {
       console.log(res);
       navigate('/');

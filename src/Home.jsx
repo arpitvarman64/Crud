@@ -8,9 +8,12 @@ function Home() {
 
   useEffect(() => {
     axios
-      .get(" http://localhost:3001/users")
-      .then((res) => setData(res.data))
+      .get(" https://65d26ec3987977636bfc55ae.mockapi.io/users")
+    
+         .then((res) => setData(res.data))
+    
       .catch((err) => console.log(err));
+      
   }, []);
 
 
@@ -18,7 +21,7 @@ function Home() {
     const confirm = window.confirm("would you like to delete?");
     if (confirm) {
       axios
-        .delete("http://localhost:3001/users/" + id)
+        .delete("https://65d26ec3987977636bfc55ae.mockapi.io/users/" + id)
         .then(res => {
           window.location.reload();
         })  
@@ -28,7 +31,7 @@ function Home() {
   return (
     <div className="d-flex flex-column justify-content-center align-items-center vh-100" style={{backgroundColor:'skyblue'}}>
       <h1>List of Users</h1>
-      <div className="w-75 rounded border shodow p-4" style={{color:'white',backgroundColor:'gray'}}>
+      <div className="w-75 rounded border shodow p-4" style={{color:'white',backgroundColor:'gray',overflow:'scroll'}}>
         <div className="d-flex justify-content-end" >
           <Link to="/create" className="btn btn-success">
             Add +

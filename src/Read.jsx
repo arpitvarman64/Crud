@@ -8,7 +8,7 @@ function Read() {
 
   useEffect(() => {
     axios
-    .get(`http://localhost:3001/users/${id}`)
+    .get(`https://65d26ec3987977636bfc55ae.mockapi.io/users/${id}`)
       .then((res) => setData(res.data))
       .catch((err) => console.log(err));
   },[id]);
