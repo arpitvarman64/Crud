@@ -50,7 +50,7 @@ function Home() {
           <tbody>
             {data.map((d, i) => (
               <tr key={i}>
-                <td>{d.i}</td>
+                <td>{i+1}</td>
                 <td>{d.name}</td>
                 <td>{d.email}</td>
                 <td>{d.phone}</td>
